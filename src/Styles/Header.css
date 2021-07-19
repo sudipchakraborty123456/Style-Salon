@@ -1,0 +1,91 @@
+.header{
+    width:100vw;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.logo{
+    text-align: center;
+}
+.logo:hover{
+    cursor: pointer;
+}
+#fn{
+    font-family: Kaushan Script;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 70px;
+/* display: flex; */
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+#ln{
+    font-family: Kaushan Script;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 35px;
+/* display: flex; */
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+letter-spacing: 12px;
+color: #FFFFFF;
+}
+.item{
+    background: #0C0B0B;
+border: 1px solid #d3af37;
+backdrop-filter: blur(4px);
+font-family: Alike;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 30px; 
+/* identical to box height */
+
+/* display: flex; */
+align-items: center;
+text-align: center;
+text-transform: capitalize;
+
+color: #d3af37;
+margin: 5px;
+padding:5px;
+}
+.item:hover{
+    cursor: pointer;
+}
+.pages{
+    font-size: 23px;
+}
+.pages:hover{
+    cursor: pointer;
+}
+.social{
+    width: 30px;
+    height: 30px;
+}
+.fb:hover{
+    color: 	#4267B2
+}
+.tw:hover{
+    color: #1DA1F2;
+}
+.ins:hover{
+    color:#E1306C
+}
+.service{
+    background-color: transparent;
+    color: white;
+    border: none;
+    width: auto;
+}
+.service option{
+    color: black;
+}
