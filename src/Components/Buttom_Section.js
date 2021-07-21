@@ -3,7 +3,7 @@ import "../Styles/ButtomSection.css"
 class Buttom_Section extends React.Component {
     render() {
         return (
-            <>
+            <div className="container-fluid">
                 <div className="row text-center buttomSection">
                     <span className="fn">STYLE</span>
                     <span className="ln">SALON</span>
@@ -21,7 +21,7 @@ class Buttom_Section extends React.Component {
                 </div>
                 </div>
                 
-            </>
+            </div>
         )
     }
 }

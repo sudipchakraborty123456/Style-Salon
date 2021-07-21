@@ -1,9 +1,10 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
-import Buttom_Section from "../Components/Buttom_Section";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loaders
 import "../Styles/Home.css"
 import BookAppoForm from "../Components/BookAppoForm"
+import Header from "../Components/Header";
+import Buttom_Section from "../Components/Buttom_Section";
 class Home extends React.Component {
     gentsClicked=()=>{
         this.props.history.push("/service/gents");
@@ -15,8 +16,9 @@ class Home extends React.Component {
     render() {
         const thumb = ["Images/salon.jpg", "Images/salon1.jpg","Images/salon2.jpg","Images/salon3.jpg"]
         return (
+            <>
+            <Header/>
             <div className="container-fluid">
-                
                 <div className="images mx-5 my-5">
                     <Carousel className="carousel" dynamicHeight={true} showThumbs={false} stopOnHover={true} autoPlay={true} interval={3000} infiniteLoop={true} >
                         {thumb.map((item, index) => {
@@ -41,8 +43,9 @@ class Home extends React.Component {
                     </div>
                 </div>
                 <BookAppoForm/>
-                <Buttom_Section />
             </div>
+            <Buttom_Section/>
+            </>
         );
     }
 }

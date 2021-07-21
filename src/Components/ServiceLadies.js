@@ -1,6 +1,7 @@
 import React from 'react';
 import Buttom_Section from "../Components/Buttom_Section";
 import BookAppoForm from "../Components/BookAppoForm";
+import Header from "../Components/Header";
 class ServiceLadies extends React.Component{
     gentsServiceClicked=()=>{
         this.props.history.push("/service/gents")
@@ -8,6 +9,7 @@ class ServiceLadies extends React.Component{
     render() {
         return (
             <div>
+                <Header/>
                     <div className="container-fluid">
                     <div className="row services my-3">
                         <span  >LADIES</span>
@@ -87,8 +89,9 @@ class ServiceLadies extends React.Component{
                         <button className="btn btn-light" onClick={()=>this.gentsServiceClicked()}>Gents Services</button>
                     </div>
                     <BookAppoForm/>
-                    <Buttom_Section/>
+                   
                 </div>
+                <Buttom_Section/>
             </div>
         )
     }

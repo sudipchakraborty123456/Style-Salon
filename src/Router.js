@@ -7,6 +7,8 @@ import Login from "./Components/Login"
 import SalonFinder from "./Components/SalonFinder"
 import ServiceGents from "./Components/ServiceGents";
 import ServiceLadies from "./Components/ServiceLadies";
+import Buttom_Section from "./Components/Buttom_Section";
+import DetailsPage from "./Components/DetailsPage";
 import {Route,BrowserRouter} from "react-router-dom";
 import { Component } from "react";
 
@@ -17,7 +19,7 @@ class Router extends Component {
     render() {
         return (
             <BrowserRouter>
-            <Header/>
+            {/* <Header/> */}
             <Route exact path="/" component={Home}/>
             <Route path="/home" component={Home} />
             <Route path="/aboutus" component={AboutUs}/>
@@ -27,6 +29,8 @@ class Router extends Component {
             <Route path="/salonFinder" component={SalonFinder}/>
             <Route path="/service/gents" component={ServiceGents}/>
             <Route path="/service/ladies" component={ServiceLadies}/>
+            <Route path="/details" component={DetailsPage}/>
+            {/* <Buttom_Section/> */}
             </BrowserRouter>
         )
     }

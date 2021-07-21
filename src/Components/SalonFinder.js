@@ -2,8 +2,9 @@ import React from 'react';
 import GentsFilteroptions from './GentsFilterOption';
 import LadiesFilperOptions from './LadiesFilterOption';
 import SalonDetails from "../Components/SalonDetails";
-import Buttom_Section from "../Components/Buttom_Section";
 import "../Styles/salonFilter.css"
+import Header from "../Components/Header";
+import Buttom_Section from "../Components/Buttom_Section";
 class SalonFinder extends React.Component {
     constructor(props) {
         super(props);
@@ -26,9 +27,14 @@ class SalonFinder extends React.Component {
             })
         }
     }
+    salonDetailsClicked=()=>{
+        this.props.history.push("/details");
+    }
     render() {
         const { selectedGender } = this.state;
         return (
+            <>
+            <Header/>
             <div className="container-fluid">
                 <h3 className="text-center my-2">Saoln Finder</h3>
                 <div className='row'>
@@ -79,13 +85,17 @@ class SalonFinder extends React.Component {
                     </div>
                     </div>
                     <div className='col-12 col-sm-12 col-mg-8 col-lg-8 rightSide p-3container'>
-                    <SalonDetails/>
-                    <SalonDetails/>
-                    <SalonDetails/>
+                    <a onClick={()=>this.salonDetailsClicked()}><SalonDetails /></a>
+                    <a onClick={()=>this.salonDetailsClicked()}><SalonDetails /></a>
+                    <a onClick={()=>this.salonDetailsClicked()}><SalonDetails /></a>
+                    <a onClick={()=>this.salonDetailsClicked()}><SalonDetails /></a>
+                    <a onClick={()=>this.salonDetailsClicked()}><SalonDetails /></a>
+                    <a onClick={()=>this.salonDetailsClicked()}><SalonDetails /></a>
                     </div>
                 </div>
-                <Buttom_Section/>
             </div>
+            <Buttom_Section/>
+            </>
         )
     }
 }

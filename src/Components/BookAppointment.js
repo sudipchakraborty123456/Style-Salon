@@ -2,11 +2,14 @@ import React from 'react';
 import bookImage from "../Images/salon.jpg";
 import "../Styles/BookAppo.css"
 import Buttom_Section from "../Components/Buttom_Section";
+import Header from "../Components/Header";
 import BookAppoForm from '../Components/BookAppoForm';
+
 class BookAppointment extends React.Component {
     render() {
         return (
             <div className="container-fluid containerfluid">
+                <Header/>
                 <div className="row">
                     <img src={bookImage} className="bookImage" alt="Sorry!" />
                 </div>
