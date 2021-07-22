@@ -5,11 +5,12 @@ body {
     height: 100%;
     box-sizing: border-box;
     border: none;
+    background-color: antiquewhite;
 }
 
-.container {
+/* .container {
     height: 100%;
-}
+} */
 
 .bookImage {
     height: 400px;

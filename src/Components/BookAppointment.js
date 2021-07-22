@@ -14,12 +14,7 @@ class BookAppointment extends React.Component {
                     <img src={bookImage} className="bookImage" alt="Sorry!" />
                 </div>
                 <div className="container">
-                    <div className="row text-center">
-                        <h1>BOOK AN APPOINTMENT ONLINE</h1>
-                        <p>Our online bookings service operates between 10:00a.m. and 6:00p.m.</p>
-                        <p>During opening hours, we'll call you back within 1 hour to confirm your appointment. Outside opening hours we will call you soon after 10:00am</p>
-                        <p>Your data is safe with us! We will only use your details to process your salon booking, and won't share them with third parties.</p>
-                    </div>
+                    
 
                    <BookAppoForm/>
                     <div className="row text-center">

@@ -36,12 +36,12 @@ class SalonFinder extends React.Component {
             <>
             <Header/>
             <div className="container-fluid">
-                <h3 className="text-center my-2">Saoln Finder</h3>
+                <h1 className="text-center my-2">Saoln Finder</h1>
                 <div className='row'>
                     <div className='col-12 col-sm-12 col-mg-4 col-lg-4 p-3 filter '>
-                        <div className='col-11 filterSection p-3 ml-3'>
+                        <div className='col-11 borderDesign p-3 ml-3'>
                         <div className='row'>
-                            <div className='col-12 col-sm-12 col-mg-4 col-lg-4'>Filters</div>
+                            <h2 className='col-12 col-sm-12 col-mg-4 col-lg-4'>Filters</h2>
                             <button className="btn btn-primary col-12 col-sm-12 col-mg-8 col-lg-8">Reset All Filter</button>
                         </div>
 
@@ -84,7 +84,7 @@ class SalonFinder extends React.Component {
                         }
                     </div>
                     </div>
-                    <div className='col-12 col-sm-12 col-mg-8 col-lg-8 rightSide p-3container'>
+                    <div className=' col-12 col-sm-12 col-mg-8 col-lg-8 rightSide p-3container'>
                     <a onClick={()=>this.salonDetailsClicked()}><SalonDetails /></a>
                     <a onClick={()=>this.salonDetailsClicked()}><SalonDetails /></a>
                     <a onClick={()=>this.salonDetailsClicked()}><SalonDetails /></a>
